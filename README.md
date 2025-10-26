@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Ahamed Shafeek — Website (Homepage)
 
 This folder contains a modern, minimalist homepage built to the Common Design Prompt with a floating pill navbar, asymmetrical hero, key stats, trusted logos, about preview, venture cards, and a CTA block.
@@ -18,3 +19,6 @@ Open `website/index.html` in your browser.
 
 - Build the About page using the provided About Page UI prompt.
 - Expand nav links to separate pages when ready.
+=======
+# AhamedShafeek.github.io
+>>>>>>> aaab0c367df02834010401083d1166f515baa911
