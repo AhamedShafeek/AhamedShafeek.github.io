@@ -6,8 +6,8 @@
   const yearEl = document.getElementById('year');
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 
-  // Back to top button
-  const toTop = document.getElementById('toTop');
+  // Back to top button (support both legacy and new IDs)
+  const toTop = document.getElementById('toTop') || document.getElementById('backToTop');
   const onScroll = () => {
     if (!toTop) return;
     if (window.scrollY > 400) {
@@ -18,6 +18,12 @@
   };
   window.addEventListener('scroll', onScroll, { passive: true });
   onScroll(); // Initial check
+
+  if (toTop) {
+    toTop.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
 
   // Mobile menu toggle with animation
   const burger = document.getElementById('burger');

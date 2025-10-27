@@ -8,180 +8,402 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./css/modern-design.css" />
+  <link rel="stylesheet" href="./css/clean.css" />
 </head>
 <body>
-  <!-- Floating pill navbar -->
-  <div class="site-nav-wrap">
-    <nav class="navbar container" aria-label="Primary">
+  <!-- Clean navbar -->
+  <header class="nav-wrapper">
+    <nav class="navbar">
       <div class="nav-brand">Ahamed Shafeek</div>
       <div class="nav-links">
         <a class="active" href="./index.html">Home</a>
-        <a href="#about">About</a>
-        <a href="#ventures">Ventures</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#contact">Contact</a>
+        <a href="./about.html">About</a>
+        <a href="./ventures.html">Ventures</a>
+        <a href="./portfolio.html">Portfolio</a>
+        <a href="./journey.html">Journey</a>
       </div>
-      <div class="nav-cta">
-        <button class="burger" id="burger" aria-label="Open menu"><span class="lines"><span></span></span><span>Menu</span></button>
+      <div class="nav-actions">
+        <a href="./contact.html" class="btn btn-outline">Contact</a>
+        <a href="https://linkedin.com/in/ahamedshafeek" target="_blank" class="btn btn-dark">LinkedIn</a>
       </div>
+      <button class="burger" id="burger" aria-label="Menu">Menu</button>
     </nav>
-  </div>
+  </header>
 
   <main>
     <!-- Hero -->
     <section class="hero section">
       <div class="container hero-grid">
         <div>
-          <div class="label">Founder • SaaS • EdTech</div>
-          <h1 class="title">Building the Future of Affordable SaaS & EdTech in India</h1>
-          <p class="intro">I'm Ahamed Shafeek, Founder & CEO of Z3Connect and Z2Learn. From a school boy with just a phone to leading two startups, I'm on a mission to make world‑class technology accessible to every Indian business and learner.</p>
+          <div class="label">🚀 AI Entrepreneur • Full-Stack Developer • Founder of 3 Startups</div>
+          <h1 class="title">Making Technology & Education Accessible to Everyone</h1>
+          <p class="intro">I'm <strong>Ahamed Shafeek</strong>, a 21-year-old AI entrepreneur from Tamil Nadu, India. Founder & CEO of <strong>Z3Connect</strong>, <strong>Z2Learn</strong>, and <strong>Z1Renders</strong>. From building my first startup in high school to teaching 600+ students and developing 22+ working tools — I'm on a mission to democratize technology for Indian businesses and learners.</p>
           <div class="cta-row">
-            <a class="btn btn-primary" href="#contact">Book a Strategy Call</a>
-            <a class="btn btn-secondary" href="#ventures">Explore My Ventures</a>
-            <a class="btn btn-outline" href="#portfolio">Read More</a>
+            <a class="btn btn-primary" href="./contact.html">📧 Book a Strategy Call</a>
+            <a class="btn btn-secondary" href="./ventures.html">🔥 Explore My Ventures</a>
+            <a class="btn btn-outline" href="./portfolio.html">💼 View Portfolio</a>
           </div>
         </div>
         <div class="portrait-wrap">
           <div class="portrait">
-            <!-- Replace this placeholder with your headshot at assets/images/portrait.jpg -->
-            <img src="./assets/images/portrait.jpg" alt="Portrait placeholder of Ahamed Shafeek" onerror="this.style.display='none'" />
+            <img src="./assets/images/Untitled design.svg" alt="Ahamed Shafeek" />
           </div>
         </div>
         <aside class="hero-stats" aria-label="Key stats">
           <div class="stat">
-            <strong>500+ </strong>
+            <strong>600+</strong>
             <small>Students Taught</small>
           </div>
           <div class="stat">
-            <strong>2</strong>
-            <small>Successful Startups</small>
+            <strong>3</strong>
+            <small>Startups Founded</small>
           </div>
           <div class="stat">
-            <strong>50+ </strong>
-            <small>Business Solutions</small>
+            <strong>22+</strong>
+            <small>Working Tools Built</small>
           </div>
           <div class="stat">
-            <strong>3+ </strong>
-            <small>Years in Stealth</small>
+            <strong>30+</strong>
+            <small>Workshops Conducted</small>
           </div>
         </aside>
       </div>
 
       <!-- Feature/Stats Bar -->
       <div class="container">
-        <div class="features">
-          <div class="feature">
-            <h4>India‑First Strategy</h4>
-            <p>Built for MSMEs across India, engineered for impact.</p>
+        <div class="features-grid mt-2">
+          <div class="feature-card">
+            <div class="feature-icon">🌐</div>
+            <h4>India‑First Innovation</h4>
+            <p>Built for MSMEs & students across India, engineered for real impact.</p>
           </div>
-          <div class="feature">
-            <h4>Affordable Innovation</h4>
-            <p>Enterprise‑grade tools without enterprise pricing.</p>
+          <div class="feature-card">
+            <div class="feature-icon">💰</div>
+            <h4>Affordable Solutions</h4>
+            <p>Enterprise‑grade tools and education without the premium price tag.</p>
           </div>
-          <div class="feature">
+          <div class="feature-card">
+            <div class="feature-icon">🎨</div>
             <h4>User‑Centric Design</h4>
-            <p>Clean, modern interfaces that teams actually use.</p>
+            <p>Clean, intuitive interfaces built with React, Flutter, and modern tech.</p>
           </div>
-          <div class="feature">
-            <h4>Reliable Platform</h4>
-            <p>99.7% uptime with secure, scalable infrastructure.</p>
+          <div class="feature-card">
+            <div class="feature-icon">⚡</div>
+            <h4>Full‑Stack Expertise</h4>
+            <p>From AI to SaaS, from idea to deployment — end‑to‑end solutions.</p>
           </div>
         </div>
       </div>
     </section>
 
     <!-- About preview -->
-    <section id="about" class="section reveal">
-      <div class="container split">
+    <section id="about" class="section bg-alt">
+      <div class="container content-split">
         <div>
-          <div class="kicker label">About</div>
-          <h2>Crafting affordable SaaS and intuitive learning experiences</h2>
+          <div class="label">🎯 My Story</div>
+          <h2>From a School Kid with a Phone to Leading 3 Startups</h2>
         </div>
         <div>
-          <p>Started as a teenager with no skills except passion. Built my first business through failures, learned from every setback, and discovered that the best technology should be affordable and accessible.</p>
-          <p>Today, Z3Connect serves businesses across India while Z2Learn makes premium education available to anyone with ambition.</p>
+          <p>Started my entrepreneurial journey at 15 with just a smartphone and burning passion. Founded <strong>Z1Renders</strong> (3D rendering & animation), learned Unity, business fundamentals, and built the capital to fuel my bigger dreams.</p>
+          <p>Today, <strong>Z3Connect</strong> powers businesses across India with AI-driven SaaS tools like Z CRM, Z Assist, Z Booking, Z ERP, and Z Content Creator. Meanwhile, <strong>Z2Learn</strong> has taught 600+ students through hands-on, project-based courses in AI, coding, no-code, and game development.</p>
+          <p><strong>Tech Stack:</strong> React.js, Node.js, Flutter, Python, MongoDB, Firebase, Express.js, Flask, and more.</p>
+          <a href="./about.html" class="btn btn-primary mt-1">📖 Read My Full Story</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tech Stack Section -->
+    <section class="section">
+      <div class="container">
+        <div class="text-center mb-2">
+          <div class="label">💻 Technical Arsenal</div>
+          <h2>Full‑Stack Development Meets AI Innovation</h2>
+          <p class="muted">Building with modern, production-grade technologies</p>
+        </div>
+        
+        <div class="tech-grid">
+          <div class="tech-category">
+            <h4>Languages</h4>
+            <div class="tech-badges">
+              <span class="tech-badge">Python</span>
+              <span class="tech-badge">JavaScript</span>
+              <span class="tech-badge">C/C++</span>
+              <span class="tech-badge">SQL</span>
+            </div>
+          </div>
+          
+          <div class="tech-category">
+            <h4>Frontend</h4>
+            <div class="tech-badges">
+              <span class="tech-badge">React.js</span>
+              <span class="tech-badge">HTML/CSS</span>
+              <span class="tech-badge">Flutter</span>
+            </div>
+          </div>
+          
+          <div class="tech-category">
+            <h4>Backend</h4>
+            <div class="tech-badges">
+              <span class="tech-badge">Node.js</span>
+              <span class="tech-badge">Express.js</span>
+              <span class="tech-badge">Flask</span>
+              <span class="tech-badge">API Integration</span>
+            </div>
+          </div>
+          
+          <div class="tech-category">
+            <h4>Database & Cloud</h4>
+            <div class="tech-badges">
+              <span class="tech-badge">MongoDB</span>
+              <span class="tech-badge">Firebase</span>
+              <span class="tech-badge">Cloud Deployment</span>
+            </div>
+          </div>
+          
+          <div class="tech-category">
+            <h4>Tools & Frameworks</h4>
+            <div class="tech-badges">
+              <span class="tech-badge">Git</span>
+              <span class="tech-badge">No-Code Tools</span>
+              <span class="tech-badge">Unity</span>
+              <span class="tech-badge">Data Analysis</span>
+            </div>
+          </div>
+          
+          <div class="tech-category">
+            <h4>Specializations</h4>
+            <div class="tech-badges">
+              <span class="tech-badge">AI/ML</span>
+              <span class="tech-badge">Automation</span>
+              <span class="tech-badge">SaaS Development</span>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- Featured ventures -->
-    <section id="ventures" class="section reveal">
+    <section id="ventures" class="section bg-alt">
       <div class="container">
-        <div class="kicker label">Ventures</div>
-        <div class="grid-2">
-          <article class="card">
-            <h3>Z3Connect</h3>
-            <div class="sub">AI‑Powered Business Ecosystem</div>
-            <p>Simplify. Automate. Scale. From CRM to content creation, helping MSMEs thrive with affordable SaaS tools.</p>
+        <div class="text-center mb-2">
+          <div class="label">🚀 My Ventures</div>
+          <h2>Three Startups, One Vision: Accessible Innovation</h2>
+          <p class="muted">Founded before completing engineering studies — built for real impact</p>
+        </div>
+        
+        <div class="cards-grid">
+          <article class="card card-premium">
+            <div class="card-header">
+              <span class="venture-badge">⚙️ SaaS</span>
+              <h3>Z3Connect</h3>
+            </div>
+            <div class="subtitle">AI‑Powered Business Ecosystem for Indian MSMEs</div>
+            <p>Simplify. Automate. Scale. A complete suite of AI-powered tools including Z CRM, Z Assist, Z Booking, Z ERP, and Z Content Creator. Built with React, Node.js, MongoDB, and Firebase — designed to help small businesses compete with giants.</p>
+            <ul class="feature-list">
+              <li>✅ End-to-end product strategy & UI/UX</li>
+              <li>✅ Business automation at scale</li>
+              <li>✅ India-first, affordable pricing</li>
+            </ul>
             <div class="actions">
-              <a class="btn btn-primary" href="#contact">See All Products</a>
+              <a class="btn btn-primary" href="./ventures.html#z3connect">🔥 Explore Z3Connect</a>
             </div>
           </article>
 
-          <article class="card">
-            <h3>Z2Learn</h3>
-            <div class="sub">Project‑Based Learning Platform</div>
-            <p>Learn Anything. Build Everything. 28‑day courses, hands‑on projects, making premium education accessible.</p>
+          <article class="card card-premium">
+            <div class="card-header">
+              <span class="venture-badge">🎓 EdTech</span>
+              <h3>Z2Learn</h3>
+            </div>
+            <div class="subtitle">Project‑Based Learning Platform for Future Creators</div>
+            <p>Learn Anything. Build Everything. Taught 600+ students through 30+ workshops. Offering 21-day and 12-day flash courses on web/app development, AI, game design, and no-code. Project-based learning that actually builds skills.</p>
+            <ul class="feature-list">
+              <li>✅ AI, Coding, No-Code, Game Dev courses</li>
+              <li>✅ Hands-on modules with real projects</li>
+              <li>✅ Mentorship & career guidance</li>
+            </ul>
             <div class="actions">
-              <a class="btn btn-secondary" href="#contact">View Courses</a>
+              <a class="btn btn-secondary" href="./ventures.html#z2learn">📚 View Courses</a>
             </div>
           </article>
+
+          <article class="card card-premium">
+            <div class="card-header">
+              <span class="venture-badge">🎬 Creative</span>
+              <h3>Z1Renders</h3>
+            </div>
+            <div class="subtitle">3D Rendering & Animation Studio</div>
+            <p>My first startup. Where it all began. Delivering creative visual solutions for clients — learned Unity development, business operations, and startup fundamentals. Built the foundation and capital for Z2Learn and Z3Connect.</p>
+            <ul class="feature-list">
+              <li>✅ 3D rendering & animation services</li>
+              <li>✅ Unity game development</li>
+              <li>✅ Creative visual storytelling</li>
+            </ul>
+            <div class="actions">
+              <a class="btn btn-outline" href="./ventures.html#z1renders">🎨 See Our Work</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section class="section">
+      <div class="container">
+        <div class="text-center mb-2">
+          <div class="label">🏆 Impact & Achievements</div>
+          <h2>Building, Teaching, Leading</h2>
+        </div>
+        
+        <div class="achievement-grid">
+          <div class="achievement-card">
+            <div class="achievement-icon">🛠️</div>
+            <h4>22+ Working Tools</h4>
+            <p>Built AI assistants, automation dashboards, educational platforms, CRM systems, and business tools from scratch.</p>
+          </div>
+          
+          <div class="achievement-card">
+            <div class="achievement-icon">🎓</div>
+            <h4>600+ Students Taught</h4>
+            <p>Conducted 30+ workshops in schools and colleges. Mentored students in web dev, AI, game design, and no-code.</p>
+          </div>
+          
+          <div class="achievement-card">
+            <div class="achievement-icon">🚀</div>
+            <h4>Multiple Hackathons</h4>
+            <p>Participated in tech challenges by PepHands and others — focused on AI innovation and SaaS problem-solving.</p>
+          </div>
+          
+          <div class="achievement-card">
+            <div class="achievement-icon">💼</div>
+            <h4>Real-World Projects</h4>
+            <p>Nanjil Factory Automation System, ADAX Bot (academic chatbot), voice-controlled AI assistants with API integration.</p>
+          </div>
+          
+          <div class="achievement-card">
+            <div class="achievement-icon">🌱</div>
+            <h4>Sustainable Innovation</h4>
+            <p>Interned at Crazy Coconut India — worked on sustainable product development and digital transformation.</p>
+          </div>
+          
+          <div class="achievement-card">
+            <div class="achievement-icon">🎯</div>
+            <h4>Community Leadership</h4>
+            <p>Promoting "Community of Self Employment" — encouraging youth to create careers through technology.</p>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- CTA Block -->
-    <section class="section reveal">
-      <div class="container cta">
-        <div>
-          <div class="label">Get in touch</div>
-          <h2>Let's build the future together</h2>
-          <p>Whether you're a business looking to transform operations, a student wanting to learn, or an investor interested in India's next SaaS story, let's connect.</p>
-        </div>
-        <div class="actions">
-          <a class="btn btn-primary" href="#contact">Book a Strategy Call</a>
-          <a class="btn btn-secondary" href="#ventures">Explore My Ventures</a>
+    <section class="section bg-gradient">
+      <div class="container">
+        <div class="cta-section cta-premium">
+          <div class="cta-content">
+            <div class="label-light">💡 Let's Build Together</div>
+            <h2>Ready to Transform Your Business or Learn a New Skill?</h2>
+            <p>Whether you're an MSME looking to automate and scale, a student wanting to master real-world tech skills, or an investor interested in India's next big SaaS story — let's connect and create something extraordinary.</p>
+            <div class="cta-stats">
+              <div class="cta-stat">
+                <strong>24hrs</strong>
+                <small>Response Time</small>
+              </div>
+              <div class="cta-stat">
+                <strong>100%</strong>
+                <small>Client Satisfaction</small>
+              </div>
+              <div class="cta-stat">
+                <strong>3+</strong>
+                <small>Years Experience</small>
+              </div>
+            </div>
+          </div>
+          <div class="actions">
+            <a class="btn btn-primary-light" href="./contact.html">📧 Book a Strategy Call</a>
+            <a class="btn btn-secondary-light" href="./ventures.html">🔥 Explore Solutions</a>
+            <a class="btn btn-outline-light" href="./portfolio.html">💼 View Portfolio</a>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Contact anchor (simple) -->
-    <section id="contact" class="section reveal">
+    <!-- Contact preview -->
+    <section id="contact" class="section">
       <div class="container">
-        <div class="kicker label">Contact</div>
-        <h2>Reach out in 30 seconds</h2>
-        <p class="muted" style="max-width: 600px;">Use your preferred channel. Ahamed responds within 24 hours.</p>
-        <div class="features">
-          <div class="feature">
-            <h4>Email</h4>
-            <p>hello@ahamedshafeeuk.com</p>
-          </div>
-          <div class="feature">
-            <h4>Business</h4>
-            <p>business@z3connect.com</p>
-          </div>
-          <div class="feature">
-            <h4>Learning</h4>
-            <p>learn@z2learn.com</p>
-          </div>
-          <div class="feature">
+        <div class="text-center mb-2">
+          <div class="label">📬 Get in Touch</div>
+          <h2>Let's Start a Conversation</h2>
+          <p class="muted">Multiple channels, quick response — choose what works best for you</p>
+        </div>
+        
+        <div class="contact-grid">
+          <a href="mailto:ahamed@ahamedshafeek.com" class="contact-card">
+            <div class="contact-icon">📧</div>
+            <h4>Personal Email</h4>
+            <p>ahamed@ahamedshafeek.com</p>
+            <span class="contact-link">Send an email →</span>
+          </a>
+          
+          <a href="mailto:business@z3connect.in" class="contact-card">
+            <div class="contact-icon">💼</div>
+            <h4>Business Inquiries</h4>
+            <p>For Z3Connect SaaS solutions</p>
+            <span class="contact-link">Contact Z3Connect →</span>
+          </a>
+          
+          <a href="mailto:learn@z2learn.com" class="contact-card">
+            <div class="contact-icon">🎓</div>
+            <h4>Learning Programs</h4>
+            <p>For Z2Learn courses & workshops</p>
+            <span class="contact-link">Join Z2Learn →</span>
+          </a>
+          
+          <a href="https://linkedin.com/in/ahamedshafeek" target="_blank" class="contact-card">
+            <div class="contact-icon">🔗</div>
             <h4>LinkedIn</h4>
-            <p>Connect and message</p>
+            <p>Connect & network professionally</p>
+            <span class="contact-link">View Profile →</span>
+          </a>
+          
+          <a href="https://github.com/AhamedShafeek" target="_blank" class="contact-card">
+            <div class="contact-icon">💻</div>
+            <h4>GitHub</h4>
+            <p>Check out my code & projects</p>
+            <span class="contact-link">View Repositories →</span>
+          </a>
+          
+          <a href="https://www.z3connect.in" target="_blank" class="contact-card">
+            <div class="contact-icon">🌐</div>
+            <h4>Z3Connect Website</h4>
+            <p>www.z3connect.in</p>
+            <span class="contact-link">Visit Site →</span>
+          </a>
+          
+          <a href="https://www.z2learn.com" target="_blank" class="contact-card">
+            <div class="contact-icon">📚</div>
+            <h4>Z2Learn Website</h4>
+            <p>www.z2learn.com</p>
+            <span class="contact-link">Visit Site →</span>
+          </a>
+          
+          <div class="contact-card">
+            <div class="contact-icon">📍</div>
+            <h4>Location</h4>
+            <p>Tamil Nadu, India</p>
+            <span class="contact-link">Open to remote collaboration</span>
           </div>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container row">
-      <div>© <span id="year"></span> Ahamed Shafeek</div>
-      <div class="muted">India‑first • Affordable innovation</div>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-text">© <span id="year"></span> Ahamed Shafeek</div>
+      <div class="footer-text">India‑first • Affordable innovation</div>
     </div>
   </footer>
 
-  <a id="toTop" class="btn btn-outline" href="#top" aria-label="Back to top">Top</a>
+  <button id="backToTop" aria-label="Back to top">↑ Top</button>
 
   <script src="./js/main.js"></script>
 </body>
