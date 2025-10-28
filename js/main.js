@@ -28,7 +28,16 @@
   // Mobile menu toggle with animation
   const burger = document.getElementById('burger');
   const links = document.querySelector('.nav-links');
+  const navActions = document.querySelector('.nav-actions');
   let menuOpen = false;
+  
+  // Create mobile backdrop
+  let backdrop = document.querySelector('.mobile-backdrop');
+  if (!backdrop && burger) {
+    backdrop = document.createElement('div');
+    backdrop.className = 'mobile-backdrop';
+    document.body.appendChild(backdrop);
+  }
 
   if (burger && links) {
     burger.addEventListener('click', (e) => {
@@ -37,10 +46,16 @@
       
       if (menuOpen) {
         links.classList.add('mobile-open');
+        if (navActions) navActions.classList.add('mobile-open');
+        if (backdrop) backdrop.classList.add('active');
         burger.classList.add('active');
+        burger.textContent = '✕';
+        document.body.style.overflow = 'hidden'; // Prevent background scroll
+        
         // Close on outside click
         setTimeout(() => {
           document.addEventListener('click', closeMenu);
+          if (backdrop) backdrop.addEventListener('click', closeMenu);
         }, 100);
       } else {
         closeMenu();
@@ -58,9 +73,16 @@
 
   function closeMenu() {
     if (links) links.classList.remove('mobile-open');
-    if (burger) burger.classList.remove('active');
+    if (navActions) navActions.classList.remove('mobile-open');
+    if (backdrop) backdrop.classList.remove('active');
+    if (burger) {
+      burger.classList.remove('active');
+      burger.textContent = 'Menu';
+    }
     menuOpen = false;
+    document.body.style.overflow = ''; // Restore scroll
     document.removeEventListener('click', closeMenu);
+    if (backdrop) backdrop.removeEventListener('click', closeMenu);
   }
 
   // Smooth scroll for anchor links
